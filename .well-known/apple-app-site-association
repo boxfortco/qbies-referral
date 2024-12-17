@@ -1,1 +1,14 @@
-
+{
+    "applinks": {
+        "apps": [],
+        "details": [{
+            "appID": "M83E6KBJYA.com.boxfort.Qbies",
+            "paths": ["/join/*", "/join", "/"],
+            "components": [{
+                "?": {
+                    "ref": "*"
+                }
+            }]
+        }]
+    }
+}
