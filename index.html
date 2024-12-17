@@ -30,13 +30,15 @@
     </style>
     <script>
         window.onload = function() {
-            // Get referral code from URL
+            // Handle both root and /join paths
+            const path = window.location.pathname;
             const urlParams = new URLSearchParams(window.location.search);
             const refCode = urlParams.get('ref');
             
-            // Store ref code in localStorage (optional)
+            // Store ref code if present (for both paths)
             if (refCode) {
                 localStorage.setItem('qbies_referral', refCode);
+                console.log('Stored referral code:', refCode);
             }
             
             // Redirect to App Store after brief delay
